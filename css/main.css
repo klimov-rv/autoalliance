@@ -141,11 +141,12 @@ header nav .modal-header {
 
 header nav .modal-body {
   margin: 0;
-  padding-bottom: 0;
+  padding: 1.5rem 1rem 0;
 }
 
 header nav .modal-footer {
-  padding: 0 0.75rem 0.5rem 0.75rem;
+  padding: 0 1rem 1.5rem;
+  border-top: 0px solid;
 }
 
 header nav .modal-button {
