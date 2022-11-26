@@ -306,6 +306,7 @@ main .main__search-container .main__search:hover {
 
 main .main__cards-container {
   margin: 15px 0 0 0;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {

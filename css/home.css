@@ -1,0 +1,9 @@
+.cardsRow {
+    min-width: 839px;
+}
+
+@media screen and (max-width: 768px) {
+    .cardsRow {
+        min-width: unset;
+    }
+}
