@@ -15,6 +15,7 @@
 
     <!-- Main styles -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.css" />
   </head>
 
   <body>
@@ -173,8 +174,7 @@
               </button>
               <button class="upload__table-filter-button btn btn-warning mb-2">
                 Ошибки загрузки
-              </button>
-              <div class="col-7"></div>
+              </button> 
             </div>
           </div>
           <div class="row table-responsive-xl">
@@ -201,10 +201,15 @@
                 <th scope="col"><strong>Срок поставки</strong></th>
                 <th scope="col">
                   <label class="d-flex flex-column">
-                    <i class="bi bi-info-square"></i>
+                    <i title="Не предлагать аналоги" class="far fa-info-square hidden-sm hidden-xs"></i> 
                     <input type="checkbox" aria-label="Выбрать все">
                   </label>
                 </th>
+              </tr>
+              <tr>
+                <td colspan="14" class="upload__table-empty">
+                  список строк пуст
+                </td>
               </tr>
 
               <tr>
