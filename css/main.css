@@ -1722,8 +1722,7 @@ footer.footer a:hover {
 .search-results__table__block-heading h2 {
   color: #282d32;
   font-size: 16px;
-  font-family: 'AvenirNextCyr-Medium', sans-serif;
-  border: 1px solid #e3e3e3;
+  font-family: 'AvenirNextCyr-Medium', sans-serif; 
   border-top: none;
   padding: 10px;
   margin: 0;
@@ -1742,6 +1741,7 @@ footer.footer a:hover {
   font-family: arial, sans-serif;
   font-size: 14px;
   color: #656565;
+  border-bottom: 1px solid #ccc;
 }
 
 .search-results__table-row:nth-of-type(odd) {
@@ -1780,14 +1780,14 @@ footer.footer a:hover {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .search-results .cart-counter__counter {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-}
+} */
 
 .search-results .cart-counter__counter input {
   text-align: center;
@@ -2935,4 +2935,12 @@ input[type="number"] {
   .cart-page_huge__table__row div:last-child {
     flex: 1 0 100px;
   }
+}
+
+.search-results__table__price {
+  flex: 0 1 100px;
+}
+
+.search-results__table__block-heading { 
+  padding: 0;
 }
