@@ -1,7 +1,5 @@
-.cardsRow {
-    min-width: 840px;
-
-    width: 840px;
+.cardsRow { 
+    width: 723px;
 }
 
 main .main__cards-container .main__card:nth-child(3n+1) {
