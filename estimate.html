@@ -125,89 +125,92 @@
       </nav>
     </header>
 
-    <main class="main justify-content-start estimate">
-      <div class="container-fluid py-4">
-        <div class="row">
-          <div class="col-12">
-            <h1>Проценка</h1>
-          </div>
-        </div>
+    <main class="main">
+      <div class="container-fluid">
+        <div class="justify-content-start estimate">
 
-        <div class="row">
-          <div class="col-lg-4 col-sm-9 col-12">
-            <div class="input-group">
-              <label class="input-group-btn">
-                <span class="btn btn-primary">
-                  Выберите файл
-                  <input type="file" style="display: none" id="file" />
-                </span>
-              </label>
-              <input type="text" class="form-control" id="inputBox" readonly />
-
-              <script>
-                let fileInput = document.getElementById("file");
-                fileInput.onchange = () => {
-                  let selectedFile = fileInput.files[0];
-
-                  document.getElementById("inputBox").value = selectedFile.name;
-                };
-              </script>
+          <div class="row">
+            <div class="col-12">
+              <h1>Проценка</h1>
             </div>
           </div>
-        </div>
-
-        <div class="row my-4">
-          <div class="col-lg-4 col-sm-9 col-12 d-flex align-items-center">
-            <label for="maxDate">Максимальный срок доставки: </label>
-            <input
-              type="number"
-              class="form-control"
-              name="maxDate"
-              id="maxDateInput"
-            />
-            <button class="btn">Проценить</button>
+  
+          <div class="row">
+            <div class="col-lg-4 col-sm-9 col-12">
+              <div class="input-group">
+                <label class="input-group-btn">
+                  <span class="btn btn-primary">
+                    Выберите файл
+                    <input type="file" style="display: none" id="file" />
+                  </span>
+                </label>
+                <input type="text" class="form-control" id="inputBox" readonly />
+  
+                <script>
+                  let fileInput = document.getElementById("file");
+                  fileInput.onchange = () => {
+                    let selectedFile = fileInput.files[0];
+  
+                    document.getElementById("inputBox").value = selectedFile.name;
+                  };
+                </script>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 p-3 excel-container">
-            <a class="excel-button" href="#">Скачать шаблон</a>
-            <img
-              class="excel-icon"
-              src="img/icons/excel.svg"
-              alt="Excel icon"
-            />
+  
+          <div class="row my-4">
+            <div class="col-lg-4 col-sm-9 col-12 d-flex align-items-center">
+              <label for="maxDate">Максимальный срок доставки: </label>
+              <input
+                type="number"
+                class="form-control"
+                name="maxDate"
+                id="maxDateInput"
+              />
+              <button class="btn">Проценить</button>
+            </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 list-container py-3">
-            <h3>Для проценки списка артикулов Вам необходимо:</h3>
-            <ul>
-              <li>
-                скачать на свой компьютер "шаблон" (пример формата файла, в
-                котором Вам нужно подготовить файл для проценки)
-              </li>
-              <li>
-                подготовить и сохранить у себя на компьютере файл с
-                интересующими Вас брендами и артикулами в соответствии с
-                форматом загруженного файла-шаблона (или использовать этот файл
-                как заготовку для размещения в нем вашего списка)
-              </li>
-              <li>
-                нажать «Выберите файл», указать при выборе файл, который Вы
-                подготовили для проценки, затем нажать кнопку «Проценить»
-              </li>
-              <li>
-                проценка в зависимости от числа указанных позиций занимает от
-                нескольких секунд до нескольких десятков секунд. Для примера
-                файл размером в 10000 позиций обрабатывается около 30 секунд
-              </li>
-              <li>
-                по завершении проценки ваш браузер предложит Вам сохранить
-                результат в виде файла на вашем компьютере
-              </li>
-            </ul>
+  
+          <div class="row">
+            <div class="col-12 p-3 excel-container">
+              <a class="excel-button" href="#">Скачать шаблон</a>
+              <img
+                class="excel-icon"
+                src="img/icons/excel.svg"
+                alt="Excel icon"
+              />
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-12 list-container py-3">
+              <h3>Для проценки списка артикулов Вам необходимо:</h3>
+              <ul>
+                <li>
+                  скачать на свой компьютер "шаблон" (пример формата файла, в
+                  котором Вам нужно подготовить файл для проценки)
+                </li>
+                <li>
+                  подготовить и сохранить у себя на компьютере файл с
+                  интересующими Вас брендами и артикулами в соответствии с
+                  форматом загруженного файла-шаблона (или использовать этот файл
+                  как заготовку для размещения в нем вашего списка)
+                </li>
+                <li>
+                  нажать «Выберите файл», указать при выборе файл, который Вы
+                  подготовили для проценки, затем нажать кнопку «Проценить»
+                </li>
+                <li>
+                  проценка в зависимости от числа указанных позиций занимает от
+                  нескольких секунд до нескольких десятков секунд. Для примера
+                  файл размером в 10000 позиций обрабатывается около 30 секунд
+                </li>
+                <li>
+                  по завершении проценки ваш браузер предложит Вам сохранить
+                  результат в виде файла на вашем компьютере
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
