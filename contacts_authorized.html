@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,10 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- Bootstrap icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
     <!-- Main styles -->
     <link rel="stylesheet" href="css/main.css" />
@@ -22,15 +20,10 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <div
-          class="header__container container-fluid d-flex justify-content-center"
-        >
-          <div
-            class="row w-100 authorized__header d-flex justify-content-center align-items-center"
-          >
+        <div class="header__container container-fluid d-flex justify-content-center">
+          <div class="row w-100 authorized__header d-flex justify-content-center align-items-center">
             <div
-              class="authorized__header-col_first col-xl-1 col-6 m-0 d-flex justify-content-start align-items-center"
-            >
+              class="authorized__header-col_first col-xl-1 col-6 m-0 d-flex justify-content-start align-items-center">
               <div class="header__logo-container">
                 <a href="index.html">
                   <img src="img/logo/logo.png" alt="Logo" />
@@ -39,24 +32,13 @@
             </div>
 
             <div
-              class="authorized__header-col_second col-xl-4 col-sm-10 col-12 d-flex justify-content-center align-items-center"
-            >
-              <div
-                class="main__search-container d-flex flex-column align-items-center w-100"
-              >
+              class="authorized__header-col_second col-xl-4 col-sm-10 col-12 d-flex justify-content-center align-items-center">
+              <div class="main__search-container d-flex flex-column align-items-center w-100">
                 <div class="search__main w-100 d-flex justify-content-center">
-                  <input
-                    class="main__search form-control w-100"
-                    placeholder="Введите артикул..."
-                    type="search"
-                    name="Search"
-                    id="mainSearch"
-                  />
+                  <input class="main__search form-control w-100" placeholder="Введите артикул..." type="search"
+                    name="Search" id="mainSearch" />
                   <div class="search-icons">
-                    <i
-                      class="bi bi-caret-down-fill"
-                      id="searchDropdownButton"
-                    ></i>
+                    <i class="bi bi-caret-down-fill" id="searchDropdownButton"></i>
                     <i class="bi bi-search" id="searchButton"></i>
                   </div>
                 </div>
@@ -64,16 +46,8 @@
                 <div class="search__results-container">
                   <div class="search__results" id="resultsDiv">
                     <div class="form-check w-100">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="searchAnalogsCheckbox"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="searchAnalogsCheckbox"
-                      >
+                      <input class="form-check-input" type="checkbox" value="" id="searchAnalogsCheckbox" />
+                      <label class="form-check-label" for="searchAnalogsCheckbox">
                         Искать аналоги
                       </label>
                     </div>
@@ -82,105 +56,67 @@
               </div>
             </div>
 
-            <div
-              class="authorized__header-col_third col-xl-2 col-12 authorized__header-right bg-lighter"
-            >
-              <div
+            <div class="authorized__header-col_third col-xl-2 col-12 authorized__header-right bg-lighter">
+              <!-- <div
                 class="cart cart-container d-flex justify-content-xl-start justify-content-end align-items-center"
-              >
-                <div class="cart__icon">
-                  <i class="bi bi-cart3"></i>
-                  <div class="cart__items-amount">22</div>
+              > -->              
+              <a href="cart.html" class="text-decoration-none">
+                <div class="cart cart-container">
+                  <div class="cart__icon">
+                    <i class="bi bi-cart3"></i>
+                    <div class="cart__items-amount">22</div>
+                  </div>
+                  <div class="cart-text">
+                    <h2 style="text-align: left">В корзине</h2>
+                    <h3 style="text-align: left">0 товаров на 0,00</h3>
+                  </div>
                 </div>
-                <div class="cart-text">
-                  <h2 style="text-align: left">В корзине</h2>
-                  <h3 style="text-align: left">0 товаров на 0,00</h3>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div
-              class="authorized__header-col_fourth col-xl-2 col-12 authorized__header-right bg-lighter"
-            >
+            <div class="authorized__header-col_fourth col-xl-2 col-12 authorized__header-right bg-lighter">
               <h2><b>Муркин ИП</b></h2>
               <h4>№ Клиента 000000033</h4>
             </div>
 
-            <div
-              class="authorized__header-col_fifth col-xl-2 col-12 authorized__header-right bg-lighter"
-            >
+            <div class="authorized__header-col_fifth col-xl-2 col-12 authorized__header-right bg-lighter">
               <h2><b>Ваша задолженность 0</b></h2>
               <h4>(данные на 17.04.2019 16:41:49)</h4>
               <h2><b>Сумма заказов в работе 0.00</b></h2>
             </div>
 
-            <div
-              class="authorized__header-col_sixth col-md-1 col-sm-3 col-6 authorized__header-right align-items-end"
-              style="border-right: none"
-            >
-              <a href="logout.html"
-                ><img
-                  class="logout-icon"
-                  src="img/icons/logout.svg"
-                  alt="Logout"
-              /></a>
+            <div class="authorized__header-col_sixth col-md-1 col-sm-3 col-6 authorized__header-right align-items-end"
+              style="border-right: none">
+              <a href="logout.html"><img class="logout-icon" src="img/icons/logout.svg" alt="Logout" /></a>
             </div>
 
             <!-- Login modal -->
-            <div
-              class="modal fade"
-              id="loginModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="loginModalLabel">
                       Авторизация
                     </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body py-4">
                     <form action="">
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="Введите логин"
-                        name="Login"
-                        id="loginInput"
-                      />
+                      <input class="form-control" type="text" placeholder="Введите логин" name="Login"
+                        id="loginInput" />
                       <div class="input-group flex-nowrap my-3">
-                        <input
-                          class="form-control password-input"
-                          type="password"
-                          placeholder="Введите пароль"
-                          name="Password"
-                          aria-label="Password"
-                          aria-describedby="eye"
-                        />
+                        <input class="form-control password-input" type="password" placeholder="Введите пароль"
+                          name="Password" aria-label="Password" aria-describedby="eye" />
                         <span class="input-group-text bi bi-eye eye"></span>
                       </div>
 
                       <a href="#">Забыли пароль?/Сменить пароль?</a>
 
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Войти
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-primary bg-grey modal-button"
-                      >
+                      <button type="button" class="btn btn-primary bg-grey modal-button">
                         Регистрация
                       </button>
                     </form>
@@ -198,9 +134,7 @@
       <div class="container-fluid contacts">
         <h1 class="contacts__h1">Контакты</h1>
         <div class="row">
-          <div
-            class="col-sm-12 col-lg-4 d-flex flex-column justify-content-start align-items-start"
-          >
+          <div class="col-sm-12 col-lg-4 d-flex flex-column justify-content-start align-items-start">
             <h3 class="contacts__h3">Адрес:</h3>
             <h4 class="contacts__h4">
               127495, город Москва, Дмитровское шоссе, дом 163А,<br />
@@ -213,15 +147,11 @@
             </h4>
             <h4 class="contacts__h4">
               Для общих вопросов:
-              <a href="mailto:office@autoallianse.com" target="_blank"
-                >office@autoallianse.com</a
-              >
+              <a href="mailto:office@autoallianse.com" target="_blank">office@autoallianse.com</a>
             </h4>
             <h4 class="contacts__h4">
               Коммерческий отдел:
-              <a href="mailto:zakaz@autoallianse.com" target="_blank"
-                >zakaz@autoallianse.com</a
-              >
+              <a href="mailto:zakaz@autoallianse.com" target="_blank">zakaz@autoallianse.com</a>
             </h4>
 
             <h3 class="contacts__h3">График работы:</h3>
@@ -252,10 +182,7 @@
     </footer>
 
     <!-- YMaps -->
-    <script
-      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
-      type="text/javascript"
-    ></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
     <script type="text/javascript">
       ymaps.ready(init);
@@ -274,4 +201,5 @@
     <!-- Script for dropdown input -->
     <script src="js/dropdown.js"></script>
   </body>
+
 </html>

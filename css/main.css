@@ -414,15 +414,46 @@ header.header .header__cart-col {
 }
 
 header.header .header__login-reg-col {
-  padding: 15px !important;
+  padding: 15px 12px;
 }
+.header__cart-col {
+  padding-left: 15px;
+  flex: 1 1 auto;
+}
+.registration-button {
+  display: flex; 
+  align-items: center;
+} 
 
-@media screen and (max-width: 576px) {
-  header.header .header__login-reg-col {
-    margin-top: 15px !important;
+@media screen and (max-width: 768px) {
+  header.header .header__login-reg-col { 
+    flex-wrap: wrap;
+    max-width: 110px;
+    padding: 0;
+    
+  }
+  .header__login-reg-col .btn {
+    padding: .25rem .3rem;
+    margin: 0;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center; 
+  }
+  
+  .header__login-reg-col .btn + .btn {
+    margin-top: 8px;
+    width: 100%;
   }
 }
-
+@media screen and (max-width: 768px) {
+  header.header .header__login-reg-col {
+    position: absolute;
+    right: 0;
+  }
+  .header__logo-wrapper {
+    margin-bottom: 15px;
+  }
+}
 header.header .search-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2660,4 +2691,55 @@ footer.footer a:hover {
 .cart-page_huge .cart-page__button:hover {
   border: 1px solid #FBCE5D !important;
 }
-/*# sourceMappingURL=main.css.map */
+
+.cardsRow {
+  width: 723px;
+}
+
+main .main__cards-container .main__card:nth-child(3n+1) {
+  align-items: flex-start;
+}
+
+main .main__cards-container .main__card:nth-child(3n+2) {
+  align-items: center;
+}
+
+main .main__cards-container .main__card:nth-child(3n) {
+  align-items: flex-end;
+}
+
+main .main__cards-container .main__card h2 {
+  width: 140px;
+  text-align: center;
+}
+
+.modal-dialog .modal-body,
+.modal-dialog .modal-footer {
+  font-size: 15px;
+}
+
+.header__login-reg-col {
+  text-align: right;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .cardsRow {
+      min-width: unset;
+  }
+
+  main .main__search-container .main__search {
+      max-width: 700px;
+  }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+  main .main__cards-container .main__card h2,
+  main .main__cards-container .main__card-link {
+      width: 100%;
+  }
+
+}
