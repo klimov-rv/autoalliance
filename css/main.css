@@ -2910,3 +2910,29 @@ input[type="number"] {
   border: 1px solid #656565;
   color: #212529;
 }
+
+.cart-page_huge__table {
+  padding: 10px;
+}
+
+@media screen and (max-width: 576px) {
+
+  .cart-page__order-number{
+    flex: 1 1 100%;
+  }
+
+  .input-group+.btn.btn-default {
+    margin-left: 0;
+  }
+  .cart-page_huge__table__row {
+    flex-wrap: nowrap;
+  }
+  .cart-page_huge__table__header:first-child,
+  .cart-page_huge__table__row div:first-child {
+    flex: 0 1 auto;
+  }
+  .cart-page_huge__table__header:last-child,
+  .cart-page_huge__table__row div:last-child {
+    flex: 1 0 100px;
+  }
+}
