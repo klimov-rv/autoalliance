@@ -23,7 +23,7 @@
         <div class="header__container-unauthorized container-fluid d-flex justify-content-center container-fluid">
           <div class="row w-100 d-flex justify-content-between align-items-center">
             <div
-              class="order-sm-0 col-12 col-md-2 d-flex align-items-center justify-content-center justify-content-md-start header__logo-wrapper">
+              class="order-sm-0 col-12 col-md-1 d-flex align-items-center justify-content-center header__logo-wrapper">
               <div class="header__logo-container">
                 <a href="index.html">
                   <img src="img/logo/logo.png" alt="Logo" />
@@ -64,7 +64,7 @@
             </div>
 
             <div
-              class="order-1 order-xl-3 col-sm-12 col-md-10 col-xl-5 d-flex justify-content-between align-items-center ">
+              class="order-1 order-xl-3 col-sm-12 col-md-10 col-xl-6 d-flex justify-content-between align-items-center ">
               <div class="bg-grey-light header__cart-col">
                 <a href="cart.html" class="text-decoration-none">
                   <div class="cart cart-container justify-content-center justify-content-md-start">
@@ -154,29 +154,16 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-8 col-12 ">
-              <div class="input-group">
-                <div class="input-group-prepend input-group-btn">
-                  <button class="btn btn-primary" type="button">Выберите файл</button>
-                  <input type="file" style="display: none" id="file" />
-                </div> 
-                <input type="text" class="form-control"  id="inputBox" readonly>
-                <div class="input-group-append">
-                  <button class="btn btn-default" type="button">Загрузить заказ</button>
-                </div>
-                <script>
-                  let fileInput = document.getElementById("file");
-                  fileInput.onchange = () => {
-                    let selectedFile = fileInput.files[0];
-  
-                    document.getElementById("inputBox").value = selectedFile.name;
-                  };
-                </script>
-              </div>
-  
-
-              
-
+            <div class="col-lg-8 col-12 upload-group">
+              <div class="input-group row">  
+                  <div class="mb-2"> 
+                    <span class="btn btn-primary upload_btn" onClick='formFile.click()'>Выберите файл</span>
+                    <input class="form-control upload_inpt" type="file" id="formFile">
+                  </div>  
+              </div>  
+              <button class="mb-2 ms-md-3 ms-sm-0 btn btn-default navbar-btn registration-button">
+                Загрузить заказ
+              </button>
             </div>
           </div>
 

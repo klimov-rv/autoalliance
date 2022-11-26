@@ -1,5 +1,14 @@
 @import url("https://fonts.cdnfonts.com/css/arial");
 
+/* :root {
+  --bs-table-bg: #fbce5d;
+} */
+.table {
+  font-size: 14px;
+}
+.table th {
+  --bs-table-bg: #fbce5d;
+}
 .btn-default {
   color: #333 !important;
   background-color: #fff !important;
@@ -72,7 +81,12 @@ body h4 {
   letter-spacing: 0.1px;
   color: #2e3035;
 }
-
+b, strong {
+  font-weight: bold;
+}
+th {
+  background-color: #fbce5d;
+}
 .accordion-item:target .accordion-link .ion-md-arrow-forward {
   display: none;
 }
@@ -2732,35 +2746,50 @@ main .main__cards-container .main__card h2 {
 
 }
 
-.input-group .btn.btn-default {
-  border-radius: .25rem !important;
-}
+.btn.btn-default {
+  white-space: nowrap;
+} 
 
-.input-group .btn.btn-default:hover {
+.btn.btn-default:hover {
   background-color: #fff !important;
   border: 1px solid #FBCE5D !important;
   color: #FBCE5D !important;
 }
 
+.btn-primary.upload_btn {
+  width: 145px;
+  padding: 0;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input.upload_inpt {
+  position: absolute;
+  top: 0;
+  left: 65px;
+  width: calc(100% - 65px);
+}
+
+.upload-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 @media screen and (max-width: 768px) {
 
-  .input-group .input-group-append {
-    width: 100%;
-    margin-top: 15px;
-    text-align: right;
+  .upload-group {
+    flex-wrap: wrap;
   }
-
+  .input-group + .btn.btn-default {
+    margin-left: 0;
+  }
 }
 
-/* 
-.upload button {
-  border-radius: 4px;
-  background-color: #f7f7f7;
-  color: #282d32;
-  border: 1px solid #ccc;
-  white-space: nowrap;
+.upload__table-alert {
+  padding: 3px;
+  text-align: right;
+  color: red;
+  border: 1px solid #f1f1f1;
 }
-
-.upload button:hover {
-  border-color: #a67500;
-} */
