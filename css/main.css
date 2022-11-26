@@ -367,13 +367,7 @@ main .main__cards-container .main__card-link {
   width: 140px;
   height: 140px;
 }
-
-@media screen and (max-width: 768px) {
-  main .main__cards-container .main__card-link {
-    width: 100%;
-  }
-}
-
+ 
 main .main__cards-container .main__card-link:hover {
   border: 1px solid #FBCE5D;
   background-color: #fffcec;
