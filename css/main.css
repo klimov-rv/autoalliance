@@ -9,6 +9,13 @@
 .table th {
   --bs-table-bg: #fbce5d;
 }
+.table tr:hover {
+  background-color: #f7f7f7;
+}
+.table td {
+  min-height: 70px;
+  vertical-align: middle;
+}
 .btn-default {
   color: #333 !important;
   background-color: #fff !important;

@@ -143,9 +143,9 @@
             </div>
           </div>
 
-          
+
           <div class="row">
-            <div class="col-12 alert alert-dark" role="alert">  
+            <div class="col-12 alert alert-dark" role="alert">
               <div class="col-6 d-flex flex-wrap p-0 ">
                 <button class="btn btn-default me-1 mb-2">Повторить загрузку</button>
                 <button class="btn btn-default me-1 mb-2">Загрузить в корзину</button>
@@ -161,138 +161,142 @@
                 <label for="sendErrorsOnEmailCheckbox" class="form-check-label">Текст</label>
               </div>
             </div>
-          </div> 
+          </div>
 
           <div class="row">
-            <div class="col-12 p-0 upload__table-filter-buttons"> 
-                  <button class="upload__table-filter-button btn btn-warning mb-2 active">
-                    Успешно загружено
-                  </button>  
-                  <button class="upload__table-filter-button btn btn-warning mb-2">
-                    Требуется подтверждение
-                  </button>  
-                  <button class="upload__table-filter-button btn btn-warning mb-2">
-                    Ошибки загрузки
-                  </button>  
+            <div class="col-12 p-0 upload__table-filter-buttons">
+              <button class="upload__table-filter-button btn btn-warning mb-2 active">
+                Успешно загружено
+              </button>
+              <button class="upload__table-filter-button btn btn-warning mb-2">
+                Требуется подтверждение
+              </button>
+              <button class="upload__table-filter-button btn btn-warning mb-2">
+                Ошибки загрузки
+              </button>
               <div class="col-7"></div>
             </div>
-          </div> 
+          </div>
           <div class="row table-responsive-xl">
-            <table class="table table-bordered upload__table"> 
-              <tr> 
-                    <th class="caption" scope="col"><strong>№</strong></th>
-                    <th scope="col">
-                      <span><strong>Добавить всё</strong></span>
-                      <input type="checkbox" name="addAllUploadTable" id="addAllUploadTable"
-                        class="form-check-input mx-2" />
-                    </th>
-                    <th scope="col"><strong>% превышения</strong></th>
-                    <th scope="col">Бренд</th>
-                    <th scope="col"><strong>Артикул</strong></th> 
-                    <th scope="col"><strong>Наименование</strong></th>
-                    <th scope="col"><strong>Цена</strong></th>
-                    <th scope="col"><strong>Текущая цена</strong></th>
-                    <th scope="col"><strong>Разница в цене</strong></th>
-                    <th scope="col"><strong>Кол-во</strong></th> 
-                    <th scope="col"><strong>Сумма</strong></th>
-                    <th scope="col"><strong>Комментарий</strong></th>
-                    <th scope="col"><strong>Срок поставки</strong></th>
-                    <th scope="col">
-                      <strong>
-                        <i class="bi bi-info-square"></i>
-                        <input type="checkbox" aria-label="Выбрать все">
-                      </strong>
-                    </th> 
+            <table class="table table-bordered upload__table">
+              <tr>
+                <th class="caption" scope="col"><strong>№</strong></th>
+                <th scope="col">
+                  <label class="d-flex flex-column">
+                    <strong>Добавить всё</strong>
+                    <input type="checkbox" name="addAllUploadTable" id="addAllUploadTable"
+                      class="form-check-input mx-2" />
+                  </label>
+                </th>
+                <th scope="col"><strong>% превышения</strong></th>
+                <th scope="col">Бренд</th>
+                <th scope="col"><strong>Артикул</strong></th>
+                <th scope="col"><strong>Наименование</strong></th>
+                <th scope="col"><strong>Цена</strong></th>
+                <th scope="col"><strong>Текущая цена</strong></th>
+                <th scope="col"><strong>Разница в цене</strong></th>
+                <th scope="col"><strong>Кол-во</strong></th>
+                <th scope="col"><strong>Сумма</strong></th>
+                <th scope="col"><strong>Комментарий</strong></th>
+                <th scope="col"><strong>Срок поставки</strong></th>
+                <th scope="col">
+                  <label class="d-flex flex-column">
+                    <i class="bi bi-info-square"></i>
+                    <input type="checkbox" aria-label="Выбрать все">
+                  </label>
+                </th>
               </tr>
 
-              <tr> 
-                  <td scope="row">1</td>
-                  <td class="justify-content-start">
-                    <input type="checkbox" class="" aria-label="Выбрать">
-                  </td>
-                  <td>0,00</td>
-                  <td>Toyota</td>
-                  <td>89343445</td> 
-                  <td>Актуатор включения сцепления</td>
-                  <td>624,54</td>
-                  <td>624,54</td>
-                  <td>0,00</td>
-                  <td>1</td> 
-                  <td>624,54</td>
-                  <td>Комментарий</td>
-                  <td>72-77</td>
-                  <td> 
-                      <input type="checkbox" class="" aria-label="Выбрать">
-                  </td>
+              <tr>
+                <td scope="row">1</td>
+                <td class="justify-content-start">
+                  <input type="checkbox" class="" aria-label="Выбрать">
+                </td>
+                <td>0,00</td>
+                <td>Toyota</td>
+                <td>89343445</td>
+                <td>Актуатор включения сцепления</td>
+                <td>624,54</td>
+                <td>624,54</td>
+                <td>0,00</td>
+                <td>1</td>
+                <td>624,54</td>
+                <td>Комментарий</td>
+                <td>72-77</td>
+                <td>
+                  <input type="checkbox" class="" aria-label="Выбрать">
+                </td>
               </tr>
 
 
               <tr>
-                <td colspan="14">
+                <td colspan="14" class="upload__table-alert">
                   заказанное кол-во превышает остатки склада
                 </td>
               </tr>
-              <tr> 
-                    <td scope="row">1</td>
-                    <td class="justify-content-start">
-                      <input type="checkbox" class="" aria-label="Выбрать">
-                    </td>
-                    <td>0,00</td>
-                    <td>Toyota</td>
-                    <td>89343445</td> 
-                    <td>Актуатор включения сцепления</td>
-                    <td>624,54</td>
-                    <td>624,54</td>
-                    <td>0,00</td>
-                    <td>1</td> 
-                    <td>624,54</td>
-                    <td>Комментарий</td>
-                    <td>72-77</td>
-                    <td>
-                      <input type="checkbox" class="" aria-label="Выбрать">
-                    </td> 
+              <tr>
+                <td scope="row">1</td>
+                <td class="justify-content-start">
+                  <input type="checkbox" class="" aria-label="Выбрать">
+                </td>
+                <td>0,00</td>
+                <td>Toyota</td>
+                <td>89343445</td>
+                <td>Актуатор включения сцепления</td>
+                <td>624,54</td>
+                <td>624,54</td>
+                <td>0,00</td>
+                <td>1</td>
+                <td>624,54</td>
+                <td>Комментарий</td>
+                <td>72-77</td>
+                <td>
+                  <input type="checkbox" class="" aria-label="Выбрать">
+                </td>
               </tr>
-              <tr> <td scope="row">1</td>
-                    <td class="justify-content-start">
-                      <input type="checkbox" class="" aria-label="Выбрать">
-                    </td>
-                    <td>0,00</td>
-                    <td>Toyota</td>
-                    <td>89343445</td> 
-                    <td>Актуатор включения сцепления</td>
-                    <td>624,54</td>
-                    <td>624,54</td>
-                    <td>0,00</td>
-                    <td>1</td> 
-                    <td>624,54</td>
-                    <td>Комментарий</td>
-                    <td>72-77</td>
-                    <td>
-                      <input type="checkbox" class="" aria-label="Выбрать">
-                    </td>  
+              <tr>
+                <td scope="row">1</td>
+                <td class="justify-content-start">
+                  <input type="checkbox" class="" aria-label="Выбрать">
+                </td>
+                <td>0,00</td>
+                <td>Toyota</td>
+                <td>89343445</td>
+                <td>Актуатор включения сцепления</td>
+                <td>624,54</td>
+                <td>624,54</td>
+                <td>0,00</td>
+                <td>1</td>
+                <td>624,54</td>
+                <td>Комментарий</td>
+                <td>72-77</td>
+                <td>
+                  <input type="checkbox" class="" aria-label="Выбрать">
+                </td>
               </tr>
-              <tr> <td scope="row">1</td>
-                    <td class="justify-content-start">
-                      <input type="checkbox" class="" aria-label="Выбрать">
-                    </td>
-                    <td>0,00</td>
-                    <td>Toyota</td>
-                    <td>89343445</td> 
-                    <td>Актуатор включения сцепления</td>
-                    <td>624,54</td>
-                    <td>624,54</td>
-                    <td>0,00</td>
-                    <td>1</td> 
-                    <td>624,54</td>
-                    <td>Комментарий</td>
-                    <td>72-77</td>
-                    <td>
-                      <input type="checkbox" class="" aria-label="Выбрать">
-                    </td> 
+              <tr>
+                <td scope="row">1</td>
+                <td class="justify-content-start">
+                  <input type="checkbox" class="" aria-label="Выбрать">
+                </td>
+                <td>0,00</td>
+                <td>Toyota</td>
+                <td>89343445</td>
+                <td>Актуатор включения сцепления</td>
+                <td>624,54</td>
+                <td>624,54</td>
+                <td>0,00</td>
+                <td>1</td>
+                <td>624,54</td>
+                <td>Комментарий</td>
+                <td>72-77</td>
+                <td>
+                  <input type="checkbox" class="" aria-label="Выбрать">
+                </td>
               </tr>
-            </table> 
+            </table>
 
-          </div> 
+          </div>
         </div>
       </div>
     </main>
