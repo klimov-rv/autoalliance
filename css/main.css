@@ -1804,6 +1804,24 @@ footer.footer a:hover {
   border-bottom: 1px solid #e3e3e3;
 }
 
+.search-results__table-row+.search-results__table-group {
+  border-top: 70px solid white;
+  position: relative;
+}
+
+.search-results__table-row+.search-results__table-group::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  display: block;
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid var(--bs-border-color);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
 .search-results__table__price {
   color: red;
 }
@@ -1812,7 +1830,6 @@ footer.footer a:hover {
 .search-results .table th {
   vertical-align: middle;
   text-align: center;
-  border: 0px solid;
 }
 
 .search-results .cart-counter__container {
