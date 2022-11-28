@@ -23,7 +23,7 @@
       <nav class="navbar">
         <div class="header__container container-fluid d-flex justify-content-center">
           <div class="row w-100 authorized__header d-flex justify-content-center align-items-center">
-            <div class="authorized__header-col_first col-xl-1 col-2 m-0 d-flex order-0 justify-content-start align-items-center">
+            <div class="authorized__header-col_first col-xl-1 col-12 m-0 d-flex order-0 justify-content-xl-start justify-content-center align-items-center">
               <div class="header__logo-container">
                 <a href="index.html">
                   <img src="img/logo/logo.png" alt="Logo" />
@@ -31,7 +31,7 @@
               </div>
             </div>
 
-            <div class="authorized__header-col_second col-xl-4 col-12 order-2 order-xl-1 d-flex justify-content-center align-items-center">
+            <div class="authorized__header-col_second col-xl-3 col-12 order-2 order-xl-1 d-flex justify-content-center align-items-center">
               <div class="main__search-container d-flex flex-column align-items-center w-100">
                 <div class="search__main w-100 d-flex justify-content-center">
                   <input class="main__search form-control w-100" placeholder="Введите артикул..." type="search"
@@ -55,10 +55,7 @@
               </div>
             </div>
 
-            <div class="authorized__header-col_third col-xl-2 col-3 order-1 authorized__header-right bg-lighter">
-              <!-- <div
-                class="cart cart-container d-flex justify-content-xl-start justify-content-end align-items-center"
-              > -->              
+            <div class="authorized__header-col_third col-xl-2 col-sm-12 order-1 authorized__header-right bg-lighter">       
               <a href="cart.html" class="text-decoration-none">
                 <div class="cart cart-container">
                   <div class="cart__icon">
@@ -73,35 +70,34 @@
               </a>
             </div>
 
-            <div class="authorized__header-col_fourth col-xl-2 col-3 order-1 authorized__header-right bg-lighter">
+            <div class="authorized__header-col_fourth col-xl-2 col-sm-12 order-1 authorized__header-right bg-lighter">
               <h2><b>Муркин ИП</b></h2>
               <h4>№ Клиента 000000033</h4>
             </div>
 
-            <div class="authorized__header-col_fifth col-xl-2 col-3 order-1 authorized__header-right bg-lighter">
+            <div class="authorized__header-col_fifth col-xl-3 col-sm-12 order-1 authorized__header-right bg-lighter">
               <h2><b>Ваша задолженность 0</b></h2>
               <h4>(данные на 17.04.2019 16:41:49)</h4>
               <h2><b>Сумма заказов в работе 0.00</b></h2>
             </div>
 
-            <div class="authorized__header-col_sixth col-xl-1 col-1 order-1 authorized__header-right align-items-center"
+            <div class="authorized__header-col_sixth col-xl-1 col-1 order-0 order-xl-1 authorized__header-right align-items-center"
               style="border-right: none">
               <a href="logout.html"><img class="logout-icon" src="img/icons/logout.svg" alt="Logout" /></a>
             </div>
 
             <!-- Login modal -->
             <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">
-                      Авторизация
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body py-4">
-                    <form action="">
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="loginModalLabel">
+                        Авторизация
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
                       <input class="form-control" type="text" placeholder="Введите логин" name="Login"
                         id="loginInput" />
                       <div class="input-group flex-nowrap my-3">
@@ -111,18 +107,18 @@
                       </div>
 
                       <a href="#">Забыли пароль?/Сменить пароль?</a>
-
+                    </div>
+                    <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Войти
                       </button>
                       <button type="button" class="btn btn-primary bg-grey modal-button">
                         Регистрация
                       </button>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             <!-- / Login modal -->
           </div>
         </div>

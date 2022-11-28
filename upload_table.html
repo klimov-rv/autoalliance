@@ -101,23 +101,23 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body py-4">
-                    <form action="">
-                      <input class="form-control" type="text" placeholder="Введите логин" name="Login"
-                        id="loginInput" />
-                      <div class="input-group flex-nowrap my-3">
-                        <input class="form-control password-input" type="password" placeholder="Введите пароль"
-                          name="Password" aria-label="Password" aria-describedby="eye" />
-                        <span class="input-group-text bi bi-eye eye"></span>
-                      </div>
+                  <div class="modal-body">
+                    <input class="form-control" type="text" placeholder="Введите логин" name="Login" id="loginInput" />
+                    <div class="input-group flex-nowrap my-3">
+                      <input class="form-control password-input" type="password" placeholder="Введите пароль"
+                        name="Password" aria-label="Password" aria-describedby="eye" />
+                      <span class="input-group-text bi bi-eye eye"></span>
+                    </div>
 
-                      <a href="#">Забыли пароль?/Сменить пароль?</a>
-
-                      <button type="button" class="btn btn-primary bg-grey modal-button">
-                        Регистрация
-                      </button>
-
-                    </form>
+                    <a href="#">Забыли пароль?/Сменить пароль?</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Войти
+                    </button>
+                    <button type="button" class="btn btn-primary bg-grey modal-button">
+                      Регистрация
+                    </button>
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@
               </button>
               <button class="upload__table-filter-button btn btn-warning mb-2">
                 Ошибки загрузки
-              </button> 
+              </button>
             </div>
           </div>
           <div class="row table-responsive-xl">
@@ -201,7 +201,7 @@
                 <th scope="col"><strong>Срок поставки</strong></th>
                 <th scope="col">
                   <label class="d-flex flex-column">
-                    <i title="Не предлагать аналоги" class="far fa-info-square hidden-sm hidden-xs"></i> 
+                    <i title="Не предлагать аналоги" class="far fa-info-square hidden-sm hidden-xs"></i>
                     <input type="checkbox" aria-label="Выбрать все">
                   </label>
                 </th>

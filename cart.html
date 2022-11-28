@@ -104,23 +104,23 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body py-4">
-                    <form action="">
-                      <input class="form-control" type="text" placeholder="Введите логин" name="Login"
-                        id="loginInput" />
-                      <div class="input-group flex-nowrap my-3">
-                        <input class="form-control password-input" type="password" placeholder="Введите пароль"
-                          name="Password" aria-label="Password" aria-describedby="eye" />
-                        <span class="input-group-text bi bi-eye eye"></span>
-                      </div>
+                  <div class="modal-body">
+                    <input class="form-control" type="text" placeholder="Введите логин" name="Login" id="loginInput" />
+                    <div class="input-group flex-nowrap my-3">
+                      <input class="form-control password-input" type="password" placeholder="Введите пароль"
+                        name="Password" aria-label="Password" aria-describedby="eye" />
+                      <span class="input-group-text bi bi-eye eye"></span>
+                    </div>
 
-                      <a href="#">Забыли пароль?/Сменить пароль?</a>
-
-                      <button type="button" class="btn btn-primary bg-grey modal-button">
-                        Регистрация
-                      </button>
-
-                    </form>
+                    <a href="#">Забыли пароль?/Сменить пароль?</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Войти
+                    </button>
+                    <button type="button" class="btn btn-primary bg-grey modal-button">
+                      Регистрация
+                    </button>
                   </div>
                 </div>
               </div>
@@ -172,7 +172,11 @@
                 <th scope="col"><strong>Кол-во</strong></th>
                 <th scope="col"><strong>Сумма</strong></th>
                 <th scope="col">
-                  <input type="checkbox" aria-label="Выбрать все">
+                  <div class="d-flex flex-column">
+                    <i class="bi bi-info-square"></i>
+                    <input type="checkbox" aria-label="Выбрать все">
+                  </div>
+
                 </th>
                 <th scope="col">
                   <i class="bi bi-trash-fill" title="Удалить все"></i>
@@ -451,15 +455,15 @@
                 <div class="col-md-5 col-12">
                   <div class="row d-flex justify-content-end">
                     <div class="col-4" style="text-align: right">Итого</div>
-                    <div class="col-4 dotted-div"></div>
-                    <div class="col-4 dotted-div"> <span>1994</span> </div>
+                    <div class="col-4 dotted-div text"></div>
+                    <div class="col-2 dotted-div"> <span>1994</span> </div>
                   </div>
                   <div class="row d-flex justify-content-end">
                     <div class="col-4" style="text-align: right">
                       Какой-то текст
                     </div>
                     <div class="col-4 dotted-div"></div>
-                    <div class="col-4 dotted-div"> <span>44</span> </div>
+                    <div class="col-2 dotted-div"> <span>44</span> </div>
                   </div>
                 </div>
               </div>

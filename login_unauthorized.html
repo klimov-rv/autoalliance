@@ -23,21 +23,23 @@
       <nav class="navbar">
         <div class="header__container-unauthorized container-fluid d-flex justify-content-center container-fluid">
           <div class="row w-100 d-flex justify-content-between align-items-center">
-            <div class="order-sm-0 col-12 col-md-2 d-flex align-items-center justify-content-center justify-content-md-start header__logo-wrapper">
+            <div
+              class="order-sm-0 col-12 col-md-2 d-flex align-items-center justify-content-center justify-content-md-start header__logo-wrapper">
               <div class="header__logo-container">
                 <a href="index.html">
                   <img src="img/logo/logo.png" alt="Logo" />
                 </a>
-              </div> 
+              </div>
               <div class="d-flex d-md-none header__login-reg-col">
-                <a class="btn btn-default navbar-btn registration-button" href="cabinet/registration.html">Регистрация</a>
+                <a class="btn btn-default navbar-btn registration-button"
+                  href="cabinet/registration.html">Регистрация</a>
                 <button class="btn navbar-btn login-button bg-grey" type="button" data-bs-toggle="modal"
                   data-bs-target="#loginModal">
                   Войти
                 </button>
               </div>
             </div>
-            
+
             <div class="order-2 order-xl-2 col-xl-4">
               <div class="main__search-container d-flex flex-column align-items-center w-100">
                 <div class="search__main w-100 d-flex justify-content-center">
@@ -62,7 +64,8 @@
               </div>
             </div>
 
-            <div class="order-1 order-xl-3 col-sm-12 col-md-10 col-xl-6 d-flex justify-content-between align-items-center "> 
+            <div
+              class="order-1 order-xl-3 col-sm-12 col-md-10 col-xl-6 d-flex justify-content-between align-items-center ">
               <div class="bg-grey-light header__cart-col">
                 <a href="cart.html" class="text-decoration-none">
                   <div class="cart cart-container justify-content-center justify-content-md-start">
@@ -76,9 +79,10 @@
                     </div>
                   </div>
                 </a>
-              </div> 
+              </div>
               <div class="bg-grey-light d-none d-md-flex d-sm-none header__login-reg-col">
-                <a class="btn btn-default navbar-btn registration-button" href="cabinet/registration.html">Регистрация</a>
+                <a class="btn btn-default navbar-btn registration-button"
+                  href="cabinet/registration.html">Регистрация</a>
                 <button class="btn navbar-btn login-button bg-grey" type="button" data-bs-toggle="modal"
                   data-bs-target="#loginModal">
                   Войти
@@ -97,23 +101,23 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body py-4">
-                    <form action="">
-                      <input class="form-control" type="text" placeholder="Введите логин" name="Login"
-                        id="loginInput" />
-                      <div class="input-group flex-nowrap my-3">
-                        <input class="form-control password-input" type="password" placeholder="Введите пароль"
-                          name="Password" aria-label="Password" aria-describedby="eye" />
-                        <span class="input-group-text bi bi-eye eye"></span>
-                      </div>
+                  <div class="modal-body">
+                    <input class="form-control" type="text" placeholder="Введите логин" name="Login" id="loginInput" />
+                    <div class="input-group flex-nowrap my-3">
+                      <input class="form-control password-input" type="password" placeholder="Введите пароль"
+                        name="Password" aria-label="Password" aria-describedby="eye" />
+                      <span class="input-group-text bi bi-eye eye"></span>
+                    </div>
 
-                      <a href="#">Забыли пароль?/Сменить пароль?</a>
-
-                      <button type="button" class="btn btn-primary bg-grey modal-button">
-                        Регистрация
-                      </button>
-
-                    </form>
+                    <a href="#">Забыли пароль?/Сменить пароль?</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Войти
+                    </button>
+                    <button type="button" class="btn btn-primary bg-grey modal-button">
+                      Регистрация
+                    </button>
                   </div>
                 </div>
               </div>

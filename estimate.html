@@ -136,37 +136,42 @@
             <div class="col-12">
               <h1>Проценка</h1>
             </div>
-          </div>
+          </div> 
 
-          <div class="row">
+          <div class="row mb-3">
             <div class="col-lg-8 col-12 upload-group">
-              <div class="input-group row">
-                <div class="mb-2">
-                  <span class="btn btn-primary upload_btn" onclick="formFile.click()">Выберите файл</span>
-                  <input class="form-control upload_inpt" type="file" id="formFile">
-                </div>
+              <div class="input-group d-flex flex-nowrap">
+                <label class="btn btn-primary upload_btn" for="formFile">Выберите файл</label>
+                <label class="form-control upload_inpt" id="uploadInpt" for="formFile">Файл не выбран.</label>
               </div>
+              <input class="form-control" type="file" id="formFile" onchange="uploadInpt.innerText = formFile.files[0].name" style="display: none;">
             </div>
           </div>
 
-          <div class="row my-4">
-            <div class="max-date__wrap">
+          <script> 
+            window.addEventListener('DOMContentLoaded', () => {
+              if (formFile.files[0]) { 
+                uploadInpt.innerText = formFile.files[0]?.name;
+              }
+            });
+          </script>
 
-              <div class="input-group ">
-                <label for="maxDate" class=" ">Максимальный срок
-                  доставки: </label>
-                <input type="number" class="form-control" name="maxDate" id="maxDateInput" />
-              </div>
-              <button type="button" class="btn btn-default navbar-btn registration-button">
+          <div class="row mb-3">
+            <div class="max-date__wrap"> 
+              <label for="maxDate" class="py-2">
+                  Максимальный срок доставки: 
+              </label>
+              <input type="number" class="form-control ms-3" name="maxDate" id="maxDateInput" /> 
+              <button type="button" class="btn btn-default ms-3">
                 Проценить
               </button>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12 p-3 excel-container">
+          <div class="row">  
+            <div class="col-12 p-3 alert alert-warning">
               <a class="excel-button" href="#">Скачать шаблон</a>
-              <img class="excel-icon" src="img/icons/excel.svg" alt="Excel icon" />
+              <i class="bi bi-file-excel"></i>
             </div>
           </div>
 

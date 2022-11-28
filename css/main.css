@@ -258,7 +258,7 @@ header nav .registration-button:hover {
 }
 
 header nav .login-button {
-  margin: 0 3px;
+  margin-left: 3px;
   background-color: #6c757d !important;
   color: #fff;
 }
@@ -464,7 +464,7 @@ header.header .header__cart-col {
 }
 
 header.header .header__login-reg-col {
-  padding: 15px 12px;
+  padding: 15px;
 }
 
 .header__cart-col {
@@ -485,7 +485,7 @@ header.header .header__login-reg-col {
 
   header.header .header__login-reg-col {
     position: absolute;
-    right: 0;
+    right: 10px;
   }
 }
 
@@ -1509,17 +1509,13 @@ footer.footer a:hover {
   color: #2e3035;
 }
 
-.estimate button {
-  border-radius: 4px;
-  background-color: #f7f7f7;
-  color: #282d32;
-  border: 1px solid #ccc;
-  margin: 0 0 0 20px;
+.estimate .upload_btn {
+  white-space: nowrap;
 }
 
-.estimate button:hover {
-  border-color: #a67500;
-}
+.upload_inpt {}
+
+#formFile {}
 
 .estimate .excel-container {
   border: 1px solid #faebcc;
@@ -1604,12 +1600,10 @@ footer.footer a:hover {
   font-family: arial, sans-serif;
   font-size: 14px;
   white-space: nowrap;
-  line-height: 3.3em;
 }
 
 .estimate label[for="maxDate"] {
   color: #656565;
-  margin: 0 20px 0 0;
 }
 
 #maxDateInput {
@@ -1618,11 +1612,6 @@ footer.footer a:hover {
   text-align: center;
   flex: 0 0 75px;
   border-radius: .375rem;
-}
-
-.max-date__wrap .input-group {
-  width: auto;
-  flex: 0 0 auto;
 }
 
 .max-date {
@@ -1636,6 +1625,11 @@ footer.footer a:hover {
 .max-date__wrap {
   display: flex;
   flex-wrap: nowrap;
+}
+
+.max-date__wrap .input-group {
+  width: auto;
+  flex: 0 0 auto;
 }
 
 
@@ -1783,6 +1777,13 @@ footer.footer a:hover {
   .search-results__table__block-heading h2 {
     border-top: 1px solid #e3e3e3;
   }
+
+  .authorized__header div.authorized__header-col_sixth {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80px;
+  }
 }
 
 .search-results__table-row {
@@ -1811,6 +1812,7 @@ footer.footer a:hover {
 .search-results .table th {
   vertical-align: middle;
   text-align: center;
+  border: 0px solid;
 }
 
 .search-results .cart-counter__container {
@@ -1871,6 +1873,7 @@ footer.footer a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   border: none !important;
+  min-width: 17px;
 }
 
 .search-results .cart-counter__counter span:hover {
@@ -2840,27 +2843,6 @@ main .main__cards-container .main__card h2 {
   color: #FBCE5D !important;
 }
 
-.btn-primary.upload_btn {
-  width: 145px;
-  padding: 0;
-  height: 37px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-input.upload_inpt {
-  position: absolute;
-  top: 0;
-  left: 13px;
-  width: 100%;
-  padding-left: 65px;
-}
-
-.upload-group {
-  display: flex;
-  flex-wrap: nowrap;
-}
 
 @media screen and (max-width: 768px) {
 
@@ -2882,6 +2864,7 @@ input.upload_inpt {
 
 .contacts a[href^="tel:"] {
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* For Chrome and Safari  */
@@ -2924,6 +2907,10 @@ input[type="number"] {
   width: 37px;
 }
 
+.quantity-controls button {
+  font-size: 21px;
+  line-height: 1em;
+}
 
 .cart-page__span-light-grey {
   position: absolute;
@@ -3015,4 +3002,12 @@ input[type="number"] {
 
 .search-results__table__price {
   text-align: right;
+}
+
+#map {
+  height: 100%;
+}
+
+.cart-page__articule {
+  color: #dc3900 !important;
 }

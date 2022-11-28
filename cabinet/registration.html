@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,10 +11,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
 
     <!-- Bootstrap icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
     <!-- Main styles -->
     <link rel="stylesheet" href="../css/main.css" />
@@ -24,21 +22,23 @@
       <nav class="navbar">
         <div class="header__container-unauthorized container-fluid d-flex justify-content-center container-fluid">
           <div class="row w-100 d-flex justify-content-between align-items-center">
-            <div class="order-sm-0 col-12 col-md-2 d-flex align-items-center justify-content-center justify-content-md-start header__logo-wrapper">
+            <div
+              class="order-sm-0 col-12 col-md-2 d-flex align-items-center justify-content-center justify-content-md-start header__logo-wrapper">
               <div class="header__logo-container">
                 <a href="index.html">
                   <img src="../img/logo/logo.png" alt="Logo" />
                 </a>
-              </div> 
+              </div>
               <div class="d-flex d-md-none header__login-reg-col">
-                <a class="btn btn-default navbar-btn registration-button" href="cabinet/registration.html">Регистрация</a>
+                <a class="btn btn-default navbar-btn registration-button"
+                  href="cabinet/registration.html">Регистрация</a>
                 <button class="btn navbar-btn login-button bg-grey" type="button" data-bs-toggle="modal"
                   data-bs-target="#loginModal">
                   Войти
                 </button>
               </div>
             </div>
-            
+
             <div class="order-2 order-xl-2 col-xl-4">
               <div class="main__search-container d-flex flex-column align-items-center w-100">
                 <div class="search__main w-100 d-flex justify-content-center">
@@ -63,7 +63,8 @@
               </div>
             </div>
 
-            <div class="order-1 order-xl-3 col-sm-12 col-md-10 col-xl-6 d-flex justify-content-between align-items-center "> 
+            <div
+              class="order-1 order-xl-3 col-sm-12 col-md-10 col-xl-6 d-flex justify-content-between align-items-center ">
               <div class="bg-grey-light header__cart-col">
                 <a href="cart.html" class="text-decoration-none">
                   <div class="cart cart-container justify-content-center justify-content-md-start">
@@ -77,9 +78,10 @@
                     </div>
                   </div>
                 </a>
-              </div> 
+              </div>
               <div class="bg-grey-light d-none d-md-flex d-sm-none header__login-reg-col">
-                <a class="btn btn-default navbar-btn registration-button" href="cabinet/registration.html">Регистрация</a>
+                <a class="btn btn-default navbar-btn registration-button"
+                  href="cabinet/registration.html">Регистрация</a>
                 <button class="btn navbar-btn login-button bg-grey" type="button" data-bs-toggle="modal"
                   data-bs-target="#loginModal">
                   Войти
@@ -98,23 +100,23 @@
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body py-4">
-                    <form action="">
-                      <input class="form-control" type="text" placeholder="Введите логин" name="Login"
-                        id="loginInput" />
-                      <div class="input-group flex-nowrap my-3">
-                        <input class="form-control password-input" type="password" placeholder="Введите пароль"
-                          name="Password" aria-label="Password" aria-describedby="eye" />
-                        <span class="input-group-text bi bi-eye eye"></span>
-                      </div>
+                  <div class="modal-body">
+                    <input class="form-control" type="text" placeholder="Введите логин" name="Login" id="loginInput" />
+                    <div class="input-group flex-nowrap my-3">
+                      <input class="form-control password-input" type="password" placeholder="Введите пароль"
+                        name="Password" aria-label="Password" aria-describedby="eye" />
+                      <span class="input-group-text bi bi-eye eye"></span>
+                    </div>
 
-                      <a href="#">Забыли пароль?/Сменить пароль?</a>
-
-                      <button type="button" class="btn btn-primary bg-grey modal-button">
-                        Регистрация
-                      </button>
-
-                    </form>
+                    <a href="#">Забыли пароль?/Сменить пароль?</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Войти
+                    </button>
+                    <button type="button" class="btn btn-primary bg-grey modal-button">
+                      Регистрация
+                    </button>
                   </div>
                 </div>
               </div>
@@ -124,7 +126,7 @@
         </div>
       </nav>
     </header>
-    
+
 
     <main class="main">
       <div class="container-fluid">
@@ -149,7 +151,7 @@
               <p>подтверждение регистрации</p>
             </div>
           </div>
-  
+
           <fieldset id="first" class="registration">
             <div class="row registration-input">
               <div class="col-md-3 col-sm-12">
@@ -159,17 +161,10 @@
                   лица и использоваться для электронного документооборота.
                 </h4>
               </div>
-  
+
               <div class="col-md-9 col-sm-12">
-                <input
-                  class="form-control"
-                  type="email"
-                  name="email"
-                  id="registrationEmailInput"
-                />
-                <span class="error-message registration-email-error"
-                  >Введите валидный email!</span
-                >
+                <input class="form-control" type="email" name="email" id="registrationEmailInput" />
+                <span class="error-message registration-email-error">Введите валидный email!</span>
                 <h4>
                   Уважаемые клиенты! Если при регистрации на сайте Вы указали
                   e-mail почтовых доменов: @mail.ru, (@list.ru, @bk.ru,
@@ -185,29 +180,20 @@
               <div class="col-md-3 col-sm-12">
                 <h3 class="required">Организационно-правовая форма</h3>
               </div>
-  
+
               <div class="col-md-9 col-sm-12">
-                <input
-                  type="radio"
-                  name="yurLico"
-                  id="registrationYurLico"
-                  checked
-                />
-                <label for="registrationYurLico"
-                  >юридическое лицо (ООО, ОАО, ЗАО)</label
-                >
+                <input type="radio" name="yurLico" id="registrationYurLico" checked />
+                <label for="registrationYurLico">юридическое лицо (ООО, ОАО, ЗАО)</label>
                 <br />
                 <input type="radio" name="yurLico" id="registrationIP" />
-                <label for="registrationIP"
-                  >индивидуальный предприниматель (ИП)</label
-                >
+                <label for="registrationIP">индивидуальный предприниматель (ИП)</label>
               </div>
             </div>
             <div class="row registration-input">
               <div class="col-3">
                 <h3 class="required">Страна</h3>
               </div>
-  
+
               <div class="col-9">
                 <h3 id="country">Россия</h3>
               </div>
@@ -216,7 +202,7 @@
               <div class="col-3">
                 <h3 class="required">Регион</h3>
               </div>
-  
+
               <div class="col-9 d-flex align-items-center">
                 <select name="Region" id="registrationRegionSelect">
                   <option value="">&lt;выберите&gt;</option>
@@ -312,43 +298,29 @@
                   <option value="89">Ямало-Ненецкий АО</option>
                   <option value="76">Ярославская обл</option>
                 </select>
-                <span
-                  class="error-message registration-select-error"
-                  style="margin: 0 0 0 10px"
-                  >Выберите ваш регион!</span
-                >
+                <span class="error-message registration-select-error" style="margin: 0 0 0 10px">Выберите ваш
+                  регион!</span>
               </div>
             </div>
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3>Населенный пункт (округ)</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="okrug"
-                  id="registrationOkrug"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="okrug" id="registrationOkrug" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Сфера вашей деятельности</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex justify-content-center flex-column"
-              >
+
+              <div class="col-md-9 col-sm-8 d-flex justify-content-center flex-column">
                 <select name="Region" id="registrationSphereSelect">
                   <option value="">&lt;выберите&gt;</option>
                   <option value="1">интернет-магазин</option>
@@ -357,27 +329,18 @@
                   <option value="4">частное лицо</option>
                   <option value="5">прочее</option>
                 </select>
-                <span class="error-message registration-select-error"
-                  >Выберите сферу вашей деятельности!</span
-                >
-  
-                <textarea
-                  class="form-control"
-                  name="registrationSphereTextarea"
-                  id="registrationSphereTextarea"
-                  cols="33"
-                  rows="2"
-                ></textarea>
+                <span class="error-message registration-select-error">Выберите сферу вашей деятельности!</span>
+
+                <textarea class="form-control" name="registrationSphereTextarea" id="registrationSphereTextarea"
+                  cols="33" rows="2"></textarea>
               </div>
             </div>
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Источник информации</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex justify-content-center flex-column"
-              >
+
+              <div class="col-md-9 col-sm-8 d-flex justify-content-center flex-column">
                 <select name="Region" id="registrationSourceSelect">
                   <option value="">&lt;выберите&gt;</option>
                   <option value="1">интернет поиск</option>
@@ -386,77 +349,50 @@
                   <option value="4">рекомендовали</option>
                   <option value="5">другой</option>
                 </select>
-                <span class="error-message registration-select-error"
-                  >Выберите источник информации!</span
-                >
-  
-                <textarea
-                  class="form-control"
-                  name="registrationSourceTextarea"
-                  id="registrationSourceTextarea"
-                  cols="33"
-                  rows="2"
-                ></textarea>
+                <span class="error-message registration-select-error">Выберите источник информации!</span>
+
+                <textarea class="form-control" name="registrationSourceTextarea" id="registrationSourceTextarea"
+                  cols="33" rows="2"></textarea>
               </div>
             </div>
             <div class="row registration-input">
               <div class="col-3">
                 <h3 class="required">Логин</h3>
               </div>
-  
+
               <div class="col-9 d-flex align-items-center position-relative">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="registrationLogin"
-                  id="registrationLogin"
-                />
+                <input class="form-control" type="text" name="registrationLogin" id="registrationLogin" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
             <div class="row registration-input">
               <div class="col-3">
                 <h3 class="required">Пароль</h3>
               </div>
-  
+
               <div class="col-9 d-flex align-items-center position-relative">
-                <input
-                  class="form-control"
-                  type="password"
-                  name="registrationPassword"
-                  id="registrationPassword"
-                />
+                <input class="form-control" type="password" name="registrationPassword" id="registrationPassword" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
             <div class="row registration-input">
               <div class="col-3">
                 <h3 class="required">Повтор пароля</h3>
               </div>
-  
+
               <div class="col-9 position-relative">
-                <input
-                  class="form-control"
-                  type="password"
-                  name="registrationPasswordRepeat"
-                  id="registrationPasswordRepeat"
-                />
-                <span class="error-message registration-input-error"
-                  >Пароли не совпадают!</span
-                >
+                <input class="form-control" type="password" name="registrationPasswordRepeat"
+                  id="registrationPasswordRepeat" />
+                <span class="error-message registration-input-error">Пароли не совпадают!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <div class="required-fields">
@@ -464,7 +400,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="row">
               <div class="col-12 m-0 p-0">
                 <button class="btn registration-button__next-step next">
@@ -473,209 +409,133 @@
               </div>
             </div>
           </fieldset>
-  
+
           <!-- SECOND STEP -->
-  
+
           <fieldset id="second">
             <div class="row registration-input">
               <div class="col-12">
                 <h2><b>Контактная информация</b></h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3>Должность</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="post"
-                  id="postInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="post" id="postInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Фамилия</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="surname"
-                  id="surnameInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="surname" id="surnameInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Имя</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="name"
-                  id="nameInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="name" id="nameInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Отчество</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="patronymic"
-                  id="patronymicInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="patronymic" id="patronymicInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Основной телефон</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="tel"
-                  name="mainTelephone"
-                  id="mainTelephone"
-                />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="tel" name="mainTelephone" id="mainTelephone" />
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Дополнительный телефон</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="tel"
-                  name="secondaryTelephone"
-                  id="secondaryTelephone"
-                />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="tel" name="secondaryTelephone" id="secondaryTelephone" />
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Факс</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
                 <input class="form-control" type="tel" name="fax" id="fax" />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3>Распорядок работы офиса</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="officeRoutine"
-                  id="officeRoutineInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="officeRoutine" id="officeRoutineInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3>Распорядок работы склада</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="storageRoutine"
-                  id="storageRoutineInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="storageRoutine" id="storageRoutineInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12 d-flex align-items-center">
                 <h2><b>Юридическая информация</b></h2>
@@ -684,270 +544,164 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Наименование организации</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="organizationName"
-                  id="organizationNameInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="organizationName" id="organizationNameInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">ИНН</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  maxlength="10"
-                  name="inn"
-                  id="innInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" maxlength="10" name="inn" id="innInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">КПП</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  maxlength="9"
-                  name="kpp"
-                  id="kppInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" maxlength="9" name="kpp" id="kppInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">ОГРН</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  maxlength="13"
-                  name="ogrn"
-                  id="ogrnInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" maxlength="13" name="ogrn" id="ogrnInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3>Налогообложение</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  type="checkbox"
-                  name="nalogooblajenie"
-                  id="nalogooblajenieCheckbox"
-                  checked
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input type="checkbox" name="nalogooblajenie" id="nalogooblajenieCheckbox" checked />
                 <label for="nalogooblajenie">является плательщиком НДС</label>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Юридический адрес</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <textarea
-                  class="form-control m-0"
-                  name="yurAdres"
-                  id="yurAdresInput"
-                  cols="7"
-                ></textarea>
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <textarea class="form-control m-0" name="yurAdres" id="yurAdresInput" cols="7"></textarea>
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Фактический адрес</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <textarea
-                  class="form-control m-0"
-                  name="faktAdres"
-                  id="faktAdresInput"
-                  cols="7"
-                ></textarea>
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <textarea class="form-control m-0" name="faktAdres" id="faktAdresInput" cols="7"></textarea>
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <h2><b>Банковские реквизиты</b></h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Расчетный счет</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  maxlength="20"
-                  name="rs"
-                  id="rsInput"
-                />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" maxlength="20" name="rs" id="rsInput" />
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">БИК банка</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  maxlength="9"
-                  name="bik"
-                  id="bikInput"
-                />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" maxlength="9" name="bik" id="bikInput" />
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3>Корр. счет банка</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="kor"
-                  id="korInput"
-                  disabled
-                />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="kor" id="korInput" disabled />
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3>Наименование банка</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="naimenovanie"
-                  id="naimenovanieInput"
-                  disabled
-                />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="naimenovanie" id="naimenovanieInput" disabled />
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <h2><b>Руководитель</b></h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Должность руководителя</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex justify-content-center flex-column"
-              >
+
+              <div class="col-md-9 col-sm-8 d-flex justify-content-center flex-column">
                 <select name="headPosition" id="headPositionSelect">
                   <option selected="selected" value="Генеральный директор">
                     Генеральный директор
@@ -959,214 +713,133 @@
                 </select>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Фамилия</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="headSurname"
-                  id="headSurnameInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="headSurname" id="headSurnameInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Имя</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="headName"
-                  id="headNameInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="headName" id="headNameInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Отчество</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="headPatronymic"
-                  id="headPatronymicInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="headPatronymic" id="headPatronymicInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <h2><b>Контактное лицо для сверки взаиморасчетов</b></h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Должность</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="kontaktDoljnost"
-                  id="kontaktDoljnostInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="kontaktDoljnost" id="kontaktDoljnostInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Фамилия</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="kontaktSurname"
-                  id="kontaktSurnameInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="kontaktSurname" id="kontaktSurnameInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Имя</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="kontaktName"
-                  id="kontaktNameInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="kontaktName" id="kontaktNameInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3>Отчество</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="text"
-                  name="kontaktPatronymic"
-                  id="kontaktPatronymicInput"
-                />
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="text" name="kontaktPatronymic" id="kontaktPatronymicInput" />
                 <div class="tooltip-icon">
                   <span class="tooltip-text">Какая-то длинная подсказка...</span>
                 </div>
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Телефон</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="tel"
-                  name="kontaktTelephone"
-                  id="kontaktTelephone"
-                />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="tel" name="kontaktTelephone" id="kontaktTelephone" />
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4">
                 <h3 class="required">Электронный адрес</h3>
               </div>
-  
-              <div
-                class="col-md-9 col-sm-8 d-flex align-items-center position-relative"
-              >
-                <input
-                  class="form-control"
-                  type="email"
-                  name="kontaktEmail"
-                  id="kontaktEmail"
-                />
-                <span class="error-message registration-input-error"
-                  >Заполните поле!</span
-                >
+
+              <div class="col-md-9 col-sm-8 d-flex align-items-center position-relative">
+                <input class="form-control" type="email" name="kontaktEmail" id="kontaktEmail" />
+                <span class="error-message registration-input-error">Заполните поле!</span>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <div class="required-fields">
@@ -1174,7 +847,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <div class="required-fields-double">
@@ -1182,7 +855,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="row">
               <div class="col-12 m-0 p-0">
                 <button class="btn registration-button__prev-step">
@@ -1194,14 +867,12 @@
               </div>
             </div>
           </fieldset>
-  
+
           <fieldset id="third">
             <div id="thirdContainer">
               <h2>
                 Мы предлагаем изучить
-                <a href="http://autoallianse.com/Files/6680.ashx"
-                  ><b>типовой договор</b></a
-                >
+                <a href="http://autoallianse.com/Files/6680.ashx"><b>типовой договор</b></a>
                 с нашей компанией
               </h2>
             </div>
@@ -1210,268 +881,262 @@
                 <button class="btn registration-button__prev-step">
                   предыдущий шаг
                 </button>
-                <button
-                  class="btn registration-button__next-step last-step-button"
-                >
+                <button class="btn registration-button__next-step last-step-button">
                   следующий шаг
                 </button>
               </div>
             </div>
           </fieldset>
-  
+
           <fieldset id="fourth">
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Имя пользователя</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Электронный адрес</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">
                 Организационно-правовая форма
               </div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Страна</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Регион</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">
                 Населенный пункт (округ)
               </div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">
                 Сфера вашей деятельности
               </div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Источник информации</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <h2>Контактная информация</h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Должность исполнителя</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Фамилия</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Имя</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Отчество</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Основной телефон</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">
                 Дополнительный телефон
               </div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Факс</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">
                 Распорядок работы офиса
               </div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">
                 Распорядок работы склада
               </div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <h2>Юридическая информация</h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">
                 Наименование организации
               </div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">ИНН</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">КПП</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">ОГРН</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Налогообложение</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Юридический адрес</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Фактический адрес</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <h2>Банковские реквизиты</h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Расчетный счет</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">БИК банка</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Корр. счет банка</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Наименование банка</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <h2>Руководитель</h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">
                 Должность руководителя
               </div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Фамилия</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Имя</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Отчество</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-12">
                 <h2>Контактное лицо для сверки взаиморасчетов</h2>
               </div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Должность</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Фамилия</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Имя</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Отчество</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Телефон</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row registration-input">
               <div class="col-md-3 col-sm-4 col-xs-12">Электронный адрес</div>
               <div class="col-md-9 col-sm-8 col-xs-12 registration-result"></div>
             </div>
-  
+
             <div class="row">
               <div class="col-12 m-0 p-0">
                 <button class="btn registration-button__prev-step">
                   предыдущий шаг
                 </button>
-                <button
-                  type="submit"
-                  class="btn registration-button__next-step"
-                  id="submitButton"
-                >
+                <button type="submit" class="btn registration-button__next-step" id="submitButton">
                   завершить регистрацию
                 </button>
               </div>
             </div>
           </fieldset>
-        </div> 
+        </div>
       </div>
     </main>
 
@@ -1493,11 +1158,8 @@
     </footer>
 
     <!-- jQuery 3.6.0 minified -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap -->
     <script src="../js/bootstrap.min.js"></script>
@@ -1512,4 +1174,5 @@
     <script src="../js/registration_validation.js"></script>
 
   </body>
+
 </html>
